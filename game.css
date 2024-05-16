@@ -1,0 +1,102 @@
+.quest-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+#game{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.choice-container{
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    margin: 0.8rem;
+   
+}
+.choice-prefix{
+   background-color: #56a5eb;
+   padding: 2rem;
+   
+   color: white;
+  
+}
+.choice-text{
+    width: 100%;
+    background-color: beige;
+    padding:2rem
+    
+}
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.correct {
+    background-color: #28a745 !important; /* Ensure important is used */
+    transition: background-color 900ms; /* Add transition for background-color */
+}
+
+.incorrect {
+    background-color: #dc3545 !important; /* Ensure important is used */
+    transition: background-color 900ms; /* Add transition for background-color */
+}
+
+
+
+/* HUD */
+
+#hud{
+    display: flex;
+    justify-content:space-between;
+}
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+#progressBar{
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull{
+    height:4rem;
+    background-color:#56a5eb ;
+    width: 0%;
+}
+@media screen and (max-width:950px) {
+
+   #progressBar {
+      height: 2rem;
+      width: 10rem;
+    
+    }
+    #progressBarFull{
+        height:2rem;
+    }
+    .hud-prefix{
+        margin-top: 6rem;
+        font-size: 1.8rem;
+    }
+    .choice-text{
+        font-size: 1.8rem;
+    }
+    .hud-main-text{
+        font-size: 4rem;
+    }
+    #progressText{
+        font-size: 2rem;
+    }
+  }
